@@ -3,11 +3,11 @@ $(document).ready(function() {
     $('.ryu-still').hide();
     $('.ryu-ready').show();
   })
-  .mouseleave(function() {
+  $('.ryu').mouseleave(function() {
     $('.ryu-ready').hide();
     $('.ryu-still').show();
   })
-  .mousedown(function() {
+  $('.ryu').mousedown(function() {
     playHadouken();    
     $('.ryu-ready').hide();
     $('.ryu-throwing').show();
@@ -22,7 +22,7 @@ $(document).ready(function() {
       }
     );
   })
-  .mouseup(function() {
+  $('.ryu').mouseup(function() {
     $('.ryu-throwing').hide();
     $('.ryu-ready').show();
   });
